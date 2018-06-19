@@ -6,21 +6,22 @@
   <style>
     body {
       margin: 0;
-      padding: 0;
-    }
-    .container {
-      margin: 0;
-      height: calc(100vh - 20px);
-      width: calc(100vw - 20px);
-      border: 10px solid red;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container > .img_blocks {
-      display: flex;
-      flex-direction: row;
-    }
+            padding: 0;
+        }
+        .container {
+            margin: 0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .container>.img_blocks {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
   </style>
 </head>
 <body>
@@ -28,10 +29,8 @@
     <div class="img_blocks">
       <img src="no_exit.png" alt="" size="50%"><br>
       <img src="no_exit.png" alt="" size="50%"><br>
-      <img src="no_exit.png" alt="" size="50%"><br>
-      <img src="no_exit.png" alt="" size="50%"><br>
-      <img src="no_exit.png" alt="" size="50%"><br>
-      <img src="no_exit.png" alt="" size="50%"><br>
+      
+      
     </div>
   </div>
 </body>
