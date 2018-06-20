@@ -12,31 +12,80 @@
         crossorigin="anonymous"></script>
 
     <style>
-        body {}
+        body {
+            font-family: 'lato','sans-serif'
+        }
 
-        .container {}
+        .container {
+            display:flex;
+        }
 
-        .container .item {}
+        .container .item {
+            display:flex;
+            flex: 1;
+            justify-content:space-between;
+            border:1px solid grey;
+            border-radius:5px;
+            margin:10px;
 
-        .container .item .content {}
+        }
 
-        .container .item .content .metadata {}
+        .container .item .content {
+            display:flex;
+        }
 
-        .container .item .content .metadata .title {}
+        .container .item .content .metadata {
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            margin-left: 20px
+        }
 
-        .container .item .btn-group {}
+        .container .item .content .metadata .title {
+            margin:0px
+        }
 
-        .container .item .btn-group .button {}
+        .container .item .btn-group {
+            display:flex;
+            align-items:center;
 
-        .container .item .btn-group .button a {}
+        }
 
-        .container .item .btn-group .button:hover {}
+        .container .item .btn-group .button {
+            height:100%;
+            display:flex;
+            align-items:center;
+            flex-direction:row;
+            width:42px;
+            justify-content:center;
+            font-size:2em;
 
-        .container .item .btn-group .button:hover a {}
+        }
 
-        .item.featured {}
+        .container .item .btn-group .button a {
+            color: black;
+            text-decoration: none;
 
-        .item.associated {}
+        }
+
+        .container .item .btn-group .button:hover {
+            background-color:red;
+            cursor:pointer;
+
+
+        }
+
+        .container .item .btn-group .button:hover a {
+            color:white;
+        }
+
+        .item.featured {
+            flex:auto:
+        }
+
+        .item.associated {
+            flex:initial;
+        }
     </style>
 </head>
 
@@ -45,8 +94,7 @@
     <div class='container'>
         <div class='item featured'>
             <div class='content'>
-                <img src='https://d33xj74kbqkoqn.cloudfront.net/uploads/campsite/campsite_image/129/dissecting-rails-icon.jpg' width='200px'
-                    height='120px'>
+                <img src='https://d32xj74kbqkoqn.cloudfront.net/uploads/campsite/campsite_image/129/dissecting-rails-icon.jpg' width='200px' height='120px'>
                 <div class='metadata'>
                     <h1 class='title'>My amazing title</h1>
                     <h3>And a subtitle</h3>
