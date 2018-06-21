@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magnus Magi</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <style>
+    body {
+        margin:0px;
+    }
+
+    .navbar {
+        background:#e00707;
+    }
+
+    .navbar div {
+        display: none;
+    }
+
+    .navbar .toggle,
+    .navbar .brand {
+        display: inline-block;
+    }
+
+    .navbar .link {
+        display: block;
+        text-align: center;
+        padding: 1em;
+        text-decoration: none;
+        background: #500303;
+        color:white;
+    }
+
+    .navbar .link:hover,
+    .navbar .link:active {
+        background:white;
+        color:#500303;
+    }
+
+    .navbar .brand {
+        width: 10em;
+        text-align: center;
+        padding: 1em;
+        color: white;
+    }
+
+    .navbar a {
+        text-decoration: none;
+    }
+
+    .navbar .toggle {
+        padding:1em;
+        color:black;
+    }
+    @media (min-width: 48em){
+        .navbar {
+            display: flex;
+
+        }
+        .navbar div{
+            display:flex;
+        }
+        .navbar .left, 
+        .navbar .right {
+            display: flex;
+            flex: 1;
+        }
+
+        .navbar .link {
+            width: auto;
+        }
+        .navbar .right {
+            justify-content: flex-end;
+        }
+        .navbar .toggle{
+            display:none;
+        }
+    }
+    @media (min-width: 48em) {
+            .navbar div {
+                display: flex;
+            }
+        }
+    /*223047*/
+    @media (max-width: 48em){
+        .navbar.active .toggle {
+            background: #500303;
+            color:white;
+        }
+        .navbar .brand {
+            text-align: left;
+
+        }
+        .navbar.active div{
+            display: block;
+        }
+    }
+
+    
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+                <i class="fas fa-skull"></i>
+        </a>
+        <a href="#"class="brand">Magnus Magi</a>
+        <div class="left">
+            <a href="#" class="link">Link 1</a>
+            <a href="#" class="link">Link 2</a>
+        </div>
+        <div class="right">
+                <a href="#" class="link">Link 3</a>
+        </div>
+    </div>
+  <script>
+
+
+
+    const navHamburger = document.queryselector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+</body>
+</html>
