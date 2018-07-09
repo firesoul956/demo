@@ -1,0 +1,50 @@
+/* header styles */
+#header{
+    width:100%;
+    background-color: white;
+    color: #a1a1a1;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f4f4f4;
+    height: 55px;
+}
+#header ul li{
+    list-style: none;
+    font-family: Arial;
+    font-size: .8em;
+    font-weight: bold;
+    display:inline-block;
+}
+#logo{
+    float:left;
+}
+#logo img{
+    width: 35px;
+    float: left;
+}
+#search{
+    width: 50%;
+    float:left;
+    margin-left: 240px;
+    padding-top: 10px;
+
+}
+#search-box{
+    width:150%;
+    height: 25px;
+    border-radius: 8px;
+    padding:10px;
+    background-color:#e9e9e9;
+    margin:-190px;
+    border: 0px;
+}
+#nav-buttons {
+    float:right;
+    margin-top: 2px;
+    margin-right:20px ;
+}
+#nav-buttons a{
+    color:#bababa;
+    text-decoration: none;
+    font-size: 1.9em;
+    margin-left:30px;
+}
