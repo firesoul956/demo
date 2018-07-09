@@ -48,3 +48,13 @@
     font-size: 1.9em;
     margin-left:30px;
 }
+#nav-buttons a:hover{
+    color:red;
+}
+#wrapper{
+    width:90%;
+    max-width:1100px;
+    min-width:800px;
+    margin: 50px auto;
+    
+}
