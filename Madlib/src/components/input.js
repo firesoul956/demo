@@ -5,6 +5,7 @@ const Input = () =>{
     return(
         <div className="input">
             <input />
+            <label> color </label>
         </div>
     )
 }
