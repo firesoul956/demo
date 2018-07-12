@@ -1,7 +1,7 @@
 import react from 'react'
 import header from './header'
 
-const Input = () =>{
+const Input = (title) =>{
     return(
         <div className="input">
             <input />
