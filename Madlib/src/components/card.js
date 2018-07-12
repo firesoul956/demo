@@ -10,31 +10,19 @@ class card extends componet{
             color:'',
             pluralnoun:'',
         }
+        this.handelinputchange= this.handelinputchange.bind(this)
         
     }
-    handelinputchange(){
-        this.setstate({color:'red'})
+    handelinputchange(event){
+        this.setstate({color:event.target.value})
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
     render() {
 
         return(
             <div className="card">
             <h1>{this.state.color}</h1>
-            <input/>
-            </div>
+            <input onChange={() => this.handelinputchange(event)}/>
+            </div >
         );
         
         return(
