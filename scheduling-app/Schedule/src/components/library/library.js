@@ -1,8 +1,8 @@
-import Reacht, {Component} from 'react';
+import Reacht, { Component } from 'react';
 
 class Library extends Component {
-    render(){
-        return(
+    render() {
+        return (
             <div className='library'>
 
             </div>

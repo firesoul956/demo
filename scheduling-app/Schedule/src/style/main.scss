@@ -1,8 +1,31 @@
+@import 'variables';
+
+
+
 .home{
     height:100vh;
     width:100vw;
-    
+
     display: grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:[page-s]repeat(3,1fr)[page-e];
     grid-template-rows:1fr;
+}
+
+.library{
+    grid-column: library-s/library-e;
+}
+.schedule{
+    grid-column: schedule-s/schedule-e;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+.gradient{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:linear-gradient(120deg, $color-pureple 0%,color-light-blue 100%);
+    z-index: -10;
 }
